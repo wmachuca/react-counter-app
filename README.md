@@ -11,3 +11,9 @@ Y luego pueden correrlo así
 ```
 npm start
 ```
+
+Para correr las pruebas
+
+```
+npm run test
+```

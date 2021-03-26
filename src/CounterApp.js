@@ -19,15 +19,19 @@ const CounterApp = ({ value }) => {
         <Fragment>
             <h1>CounterApp</h1>
             <h2> {counter} </h2>
-            <button onClick={handleAdd}>+1</button>
-            <button onClick={handleReset}>Reset</button>
-            <button onClick={handleSubstract}>-1</button>
+            <button id="btnAdd" onClick={handleAdd}>+1</button>
+            <button id="btnReset" onClick={handleReset}>Reset</button>
+            <button id="btnSubstract"onClick={handleSubstract}>-1</button>
         </Fragment>
     );
 }
 
 CounterApp.propTypes = {
     value: PropTypes.number
+}
+
+CounterApp.defaultProps = {
+    value: 1
 }
 
 export default CounterApp;
